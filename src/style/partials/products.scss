@@ -1,0 +1,40 @@
+.products {
+  &_wrapper {
+    min-height: 900px;
+    box-shadow: 2px 5px 20px rgb(141, 141, 141);
+    padding: 100px 0;
+    background: linear-gradient(
+      180deg,
+      rgb(224, 224, 224),
+      rgb(202, 202, 202) 50%
+    );
+  }
+
+  &_title {
+    text-align: center;
+    color: rgb(90, 90, 90);
+    font-family: "Lato";
+    font-weight: 500;
+    font-size: 40px;
+  }
+
+  &_slider {
+    position: relative;
+    width: 800px;
+    margin: 0 auto;
+    margin-top: 50px;
+
+    button {
+      outline: none;
+    }
+
+    &_item {
+      height: 500px;
+      width: 700px;
+      border: 2px #fff solid;
+      margin: 0 100px;
+      background-color: rgb(184, 135, 135);
+      border-radius: 10px;
+    }
+  }
+}

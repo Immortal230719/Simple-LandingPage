@@ -1,6 +1,7 @@
 @import "lib/bootstrap-reboot.min";
 @import "lib/fonts";
 @import "lib/mixins";
+@import "lib/slick";
 
 * {
   box-sizing: border-box;
@@ -54,3 +55,6 @@ ul {
 
 @import "partials/header.scss";
 @import "partials/promo.scss";
+@import "partials/products.scss";
+@import "partials/pageup.scss";
+@import "partials/nav.scss";
