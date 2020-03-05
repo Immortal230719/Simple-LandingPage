@@ -40,8 +40,8 @@
 
   img {
     display: block;
-    width: 100px;
-    height: 100px;
+    width: 80px;
+    height: 80px;
     margin-right: 20px;
   }
 }
@@ -53,3 +53,4 @@ ul {
 }
 
 @import "partials/header.scss";
+@import "partials/promo.scss";

@@ -1,0 +1,51 @@
+.promo {
+  min-height: 700px;
+  background: url("../img/main_bg4.jpg") center (center / cover) no-repeat;
+  padding: 200px 0 100px 0;
+
+  &_title {
+    width: 600px;
+    margin: 0 auto;
+    font-family: "Lato";
+    font-size: 60px;
+    text-align: center;
+    font-weight: 500;
+    color: rgb(221, 221, 221);
+    line-height: 70px;
+  }
+
+  &_descr {
+    margin-top: 50px;
+    font-family: "Roboto";
+    font-weight: 400;
+    font-size: 25px;
+    text-align: center;
+    color: #cccccc;
+
+    strong {
+      color: rgb(255, 193, 78);
+    }
+  }
+
+  &_btn {
+    display: block;
+    border: 1px #fff solid;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-family: "Lato";
+    width: 250px;
+    height: 80px;
+    border-radius: 40px;
+    background: linear-gradient(130deg, #60b5fa, #2841b1 50%);
+    color: #fff;
+    margin: 0 auto;
+    margin-top: 40px;
+
+    &:hover {
+      background: linear-gradient(130deg, #ffffff, #ffffff 50%);
+      color: #2841b1;
+      font-weight: bold;
+    }
+  }
+}

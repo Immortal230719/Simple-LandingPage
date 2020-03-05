@@ -1,8 +1,13 @@
 .header {
+  position: fixed;
+  top: 0;
+  z-index: 1000;
   height: 100px;
-  background: linear-gradient(130deg, #2d89d4, #1c43ee 50%);
+  width: 100%;
+  background: transparent;
 
   &_wrapper {
+    margin-top: 15px;
     display: flex;
     justify-content: space-between;
     align-items: center;
