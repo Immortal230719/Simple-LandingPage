@@ -1,0 +1,55 @@
+@import "lib/bootstrap-reboot.min";
+@import "lib/fonts";
+@import "lib/mixins";
+
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  width: 1280px;
+  margin: 0 auto;
+  @include tablet {
+    width: 900px;
+    padding: 0 10px 0 10px;
+  }
+}
+
+.hidden {
+  display: none;
+
+  &_active {
+    display: block;
+  }
+
+  &_flex {
+    display: flex;
+  }
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  color: #fff;
+  font-size: 30px;
+  font-family: "Roboto";
+  &:hover {
+    color: white;
+    text-decoration: none;
+  }
+
+  img {
+    display: block;
+    width: 100px;
+    height: 100px;
+    margin-right: 20px;
+  }
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+@import "partials/header.scss";

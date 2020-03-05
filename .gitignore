@@ -1,0 +1,10 @@
+node_modules
+*.log
+*.rar
+*.zip
+style.min.css
+package-lock.json
+Icomoon_code.txt
+materials
+build
+yarn.lock

@@ -1,0 +1,62 @@
+.header {
+  height: 100px;
+  background: linear-gradient(130deg, #2d89d4, #1c43ee 50%);
+
+  &_wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &_ul {
+    display: flex;
+  }
+
+  &_item {
+    position: relative;
+    color: rgba(209, 209, 209, 0.822);
+    margin-left: 40px;
+
+    strong {
+      cursor: pointer;
+      &:hover {
+        color: rgb(228, 228, 228);
+      }
+    }
+
+    a {
+      color: rgb(209, 209, 209);
+
+      &:hover {
+        text-decoration: none;
+        color: rgb(228, 228, 228);
+      }
+    }
+  }
+
+  &_tel {
+    display: flex;
+
+    img {
+      display: block;
+      position: relative;
+      top: 3px;
+      right: 10px;
+      height: 20px;
+      width: 20px;
+    }
+  }
+
+  &_mail {
+    display: flex;
+
+    img {
+      display: block;
+      position: relative;
+      top: 3px;
+      right: 10px;
+      height: 20px;
+      width: 20px;
+    }
+  }
+}
