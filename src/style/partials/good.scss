@@ -1,0 +1,48 @@
+.good {
+  background: url("../img/main_bg3.jpg") center (center / cover) no-repeat;
+
+  &_wrapper {
+    padding: 100px 50px;
+  }
+
+  &_title {
+    font-family: "Roboto";
+    font-size: 40px;
+    color: #fff;
+    font-weight: normal;
+    margin-left: 250px;
+    margin-bottom: 30px;
+  }
+
+  &_item {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 20px;
+
+    img {
+      display: block;
+      margin: 0 auto;
+      width: 50px;
+      height: 50px;
+      margin-top: 10px;
+    }
+
+    h3 {
+      margin-top: 30px;
+      font-family: "Lato";
+      font-size: 25px;
+      font-weight: normal;
+      text-align: center;
+      color: #fff;
+    }
+
+    p {
+      margin-top: 20px;
+      font-family: "Lato";
+      letter-spacing: 0.5px;
+      color: #fff;
+      font-size: 18px;
+      text-align: center;
+    }
+  }
+}

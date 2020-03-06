@@ -53,8 +53,22 @@ ul {
   margin: 0;
 }
 
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-auto-rows: 300px;
+  grid-auto-flow: dense;
+  &_wrapper {
+    position: relative;
+    height: 100%;
+    background-color: #f8f8f8;
+  }
+}
+
 @import "partials/header.scss";
 @import "partials/promo.scss";
 @import "partials/products.scss";
 @import "partials/pageup.scss";
 @import "partials/nav.scss";
+@import "partials/good.scss";
+@import "partials/footer.scss";
