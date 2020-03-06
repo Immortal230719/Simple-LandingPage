@@ -178,7 +178,18 @@
             </fieldset>
             
           </div>
-          <div class="footer_box"></div>
+          <div class="footer_box">
+            <img class="footer_address_icon" src="img/send.svg" alt="address">
+            <fieldset class="footer_form">
+              <legend>Писмо на Почту</legend>
+              <p>Мы с Вами свяжемся <br> в кратчайшие сроки</p>
+              <form id="footer_form" action="#">
+                <input type="text" name="name" placeholder="Ваше Имя">
+                <input type="text" name="phone" placeholder="Ваш Номер">
+                <button type="submit" class="footer_btn">отправить письмо</button>
+              </form>
+            </fieldset>
+          </div>
         </div>
       </div>
     </footer>
@@ -191,6 +202,7 @@
   <script src="js/slick.min.js"></script>  
   <script src="js/jquery.validate.min.js"></script>
   <script src="js/wow.min.js"></script>
+  <script src="js/jquery.maskedinput.min.js"></script>
   <script src="js/main.js"></script>
 </body>
 </html>
