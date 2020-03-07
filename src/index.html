@@ -27,7 +27,7 @@
               </a>
             </li>
             <li class="header_item">
-              <strong class="header_mail" id="header-mail">
+              <strong class="header_mail popup-show" id="header-mail">
                 <img src="img/mail.svg" alt="mail">
                 himteh-ekb@mail.ru
               </strong>
@@ -68,7 +68,7 @@
         <p class="promo_descr">
           Наша компания предлагает вашему вниманию <br> перечень товаров по <strong>низким</strong> и <strong>оптовым</strong> ценам
         </p>
-        <button class="promo_btn" type="button">Отправить письмо</button>
+        <button id="promo-btn" class="promo_btn" type="button">Отправить письмо</button>
       </div>
     </section>
 
@@ -120,7 +120,7 @@
               </div>
             </div>
           </div>
-          <button class="promo_btn products_btn" type="button">Напишите Нам</button>
+          <button id="products-btn" class="promo_btn products_btn" type="button">Напишите Нам</button>
         </div>
       </div>
     </section>
@@ -193,6 +193,49 @@
         </div>
       </div>
     </footer>
+
+    <!-- popup -->
+
+    <div id="popup" class="container-contact100">
+      <div class="wrap-contact100">
+        <button class="btn-hide-contact100">
+          &times;
+        </button>
+  
+        <div class="contact100-form-title" style="background-image: url(img/bg-02.jpg);">
+          <h3>Напишите Нам
+            <img class="footer_address_icon" src="img/send.svg" alt="address">
+          </h3>
+        </div>
+  
+        <form id="popup-form" class="contact100-form validate-form">
+          <div class="wrap-input100 validate-input">
+            <input id="name" class="input100" type="text" name="name" placeholder="Ваше имя">
+            <span class="focus-input100"></span>
+            <label class="label-input100" for="name">
+              <img class="contact-icon" src="img/user.svg" alt="user">
+            </label>
+          </div>
+  
+  
+          <div class="wrap-input100 validate-input">
+            <input id="phone" class="input100" type="text" name="phone" placeholder="Ваш номер телефона">
+            <span class="focus-input100"></span>
+            <label class="label-input100" for="phone">
+              <img class="contact-icon" src="img/smartphone.svg" alt="smartphone">
+            </label>
+          </div>
+  
+          <div class="container-contact100-form-btn">
+            <button id="contact-submit-btn" type="submit" class="contact100-form-btn" disabled>
+              Отправить Сейчас
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+      <!-- popup -->
 
     <a id="page-up" href="#up" class="page-up"></a>
    
