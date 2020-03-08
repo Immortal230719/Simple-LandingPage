@@ -1,4 +1,8 @@
 .products {
+  @include phone {
+    background: rgb(175, 175, 175);
+  }
+
   &_wrapper {
     min-height: 900px;
     box-shadow: 2px 10px 20px rgb(41, 80, 255);
@@ -9,6 +13,13 @@
       rgb(14, 139, 255) 50%
     );
     background: url("../img/main_bg3.jpg") center (center / cover) no-repeat;
+
+    @include phone {
+      background: none;
+      box-shadow: none;
+      min-height: 700px;
+      padding: 60px 0;
+    }
   }
 
   &_descr {
@@ -39,6 +50,14 @@
     margin: 0 auto;
     margin-top: 50px;
 
+    @include phablet {
+      width: 90%;
+    }
+
+    @include phone {
+      width: 100%;
+    }
+
     button {
       outline: none;
     }
@@ -51,6 +70,21 @@
       margin: 0 100px;
       border-radius: 10px;
 
+      @include phablet {
+        width: 500px;
+      }
+
+      @include tablet-portrait {
+        width: 400px;
+        height: 400px;
+      }
+
+      @include phone {
+        width: 280px;
+        height: 300px;
+        margin: 0 30px;
+      }
+
       &_title {
         font-family: "Lato";
         font-size: 30px;
@@ -58,6 +92,15 @@
         bottom: 20px;
         right: 50%;
         color: rgb(255, 255, 255);
+
+        @include tablet-portrait {
+          left: 10px;
+        }
+
+        @include phone {
+          font-size: 20px;
+          bottom: 3px;
+        }
       }
 
       strong {
@@ -74,6 +117,10 @@
         background-color: #8d7431;
         border-radius: 30px;
         border: 2px #fff solid;
+
+        @include phone {
+          font-size: 14px;
+        }
       }
     }
   }

@@ -5,15 +5,36 @@
   width: 100%;
   background: transparent;
 
+  @include phone {
+    position: fixed;
+    background: rgba(102, 102, 102, 0.774);
+    height: 62px;
+    z-index: 5;
+  }
+
   &_wrapper {
     margin-top: 15px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    @include phone {
+      margin: 0;
+    }
   }
 
   &_ul {
     display: flex;
+
+    @include phablet {
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: flex-end;
+    }
+
+    @include phone {
+      font-size: 14px;
+    }
   }
 
   &_item {
@@ -21,6 +42,9 @@
     color: rgba(209, 209, 209, 0.822);
     margin-left: 40px;
 
+    @include phablet {
+      margin: 5px 0;
+    }
     strong {
       cursor: pointer;
       &:hover {
@@ -48,6 +72,11 @@
       right: 10px;
       height: 20px;
       width: 20px;
+
+      @include phone {
+        height: 15px;
+        width: 15px;
+      }
     }
   }
 
@@ -61,6 +90,12 @@
       right: 10px;
       height: 20px;
       width: 20px;
+
+      @include phone {
+        height: 15px;
+        width: 15px;
+        top: 4px;
+      }
     }
   }
 }

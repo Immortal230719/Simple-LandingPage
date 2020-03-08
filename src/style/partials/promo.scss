@@ -3,6 +3,19 @@
   background: url("../img/main_bg4.jpg") center (center / cover) no-repeat;
   padding: 200px 0 100px 0;
 
+  @include phone {
+    padding: 100px 0 0 0;
+    min-height: 600px;
+  }
+
+  &_phone-show {
+    display: none;
+    @include phone {
+      display: block;
+      margin-bottom: 20px;
+    }
+  }
+
   &_title {
     width: 600px;
     margin: 0 auto;
@@ -12,6 +25,16 @@
     font-weight: 500;
     color: rgb(221, 221, 221);
     line-height: 70px;
+
+    @include tablet-portrait {
+      width: 100%;
+      font-size: 50px;
+    }
+
+    @include phone {
+      font-size: 30px;
+      line-height: 35px;
+    }
   }
 
   &_descr {
@@ -21,6 +44,10 @@
     font-size: 25px;
     text-align: center;
     color: #cccccc;
+
+    @include tablet-portrait {
+      font-size: 21px;
+    }
 
     strong {
       color: rgb(255, 193, 78);
@@ -40,12 +67,21 @@
     background: linear-gradient(130deg, #60b5fa, #2841b1 50%);
     color: #fff;
     margin: 0 auto;
+    font-weight: normal;
     margin-top: 40px;
 
     &:hover {
       background: linear-gradient(130deg, #ffffff, #ffffff 50%);
       color: #2841b1;
       font-weight: bold;
+    }
+
+    @include tablet-portrait {
+      &:hover {
+        background: linear-gradient(130deg, #60b5fa, #2841b1 50%);
+        color: #fff;
+        font-weight: normal;
+      }
     }
   }
 }

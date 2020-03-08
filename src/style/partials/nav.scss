@@ -20,12 +20,22 @@
 
   &_ul {
     display: flex;
+
+    @include phablet {
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: flex-end;
+    }
   }
 
   &_item {
     position: relative;
     color: rgba(255, 255, 255, 0.822);
     margin-left: 40px;
+
+    @include phablet {
+      margin: 5px 0;
+    }
 
     strong {
       cursor: pointer;
