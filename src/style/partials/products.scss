@@ -11,8 +11,18 @@
     background: url("../img/main_bg3.jpg") center (center / cover) no-repeat;
   }
 
+  &_descr {
+    display: block;
+    margin: 0 auto;
+    margin-top: 40px;
+    font-family: "Lato";
+    font-size: 25px;
+    text-align: center;
+    color: #fff;
+  }
+
   &_btn {
-    margin-top: 70px;
+    margin-top: 50px;
   }
 
   &_title {

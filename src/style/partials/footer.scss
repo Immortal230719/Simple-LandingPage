@@ -2,12 +2,17 @@
   min-height: 400px;
   background: linear-gradient(150deg, rgb(145, 145, 145), rgb(56, 56, 56) 70%);
 
-  p {
-    font-size: 17px;
-    font-family: "Lato";
-    font-weight: 400;
-    margin: 12px 0;
+  &_descr {
+    padding-left: 15px;
     color: rgb(189, 189, 189);
+
+    &_item {
+      font-size: 17px;
+      font-family: "Lato";
+      font-weight: 400;
+      margin: 12px 0;
+      color: rgb(189, 189, 189);
+    }
   }
 
   fieldset {
@@ -54,13 +59,10 @@
     width: 33%;
   }
 
-  &_descr {
-    padding-left: 15px;
-  }
-
   &_btn {
     margin-top: 20px;
-    display: block;
+    display: flex;
+    justify-content: center;
     width: 100%;
     height: 50px;
     border-radius: 8px;
@@ -70,7 +72,14 @@
     font-family: "Lato";
     font-size: 20px;
     font-weight: bold;
-    color: rgb(126, 126, 126);
+    color: rgb(211, 211, 211);
+    background-color: rgb(71, 71, 71);
+
+    &_icon {
+      height: 30px;
+      width: 30px;
+      margin-left: 15px;
+    }
   }
 
   &_address {
@@ -93,18 +102,23 @@
       height: 40px;
       width: 40px;
       margin-top: 20px;
+
+      &_1 {
+        top: 0;
+      }
     }
   }
 
-  &_form {
+  &_info {
     display: flex;
     flex-direction: column;
     border: 2px rgb(189, 189, 189) solid;
     padding: 10px 15px;
     border-radius: 5px;
 
-    p {
-      margin: 0;
+    &_descr {
+      margin-top: 15px;
+      color: rgb(189, 189, 189);
     }
 
     input {

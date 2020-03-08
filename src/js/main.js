@@ -192,6 +192,12 @@ $(document).ready(function() {
       .css("display", "flex");
   });
 
+  $("#footer-btn").on("click", function() {
+    $("#popup")
+      .fadeIn(300)
+      .css("display", "flex");
+  });
+
   $("#products-btn").on("click", function() {
     $("#popup")
       .fadeIn(300)

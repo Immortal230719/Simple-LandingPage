@@ -120,6 +120,7 @@
               </div>
             </div>
           </div>
+          <p class="products_descr">Возможны поставки любых объёмов</p>
           <button id="products-btn" class="promo_btn products_btn" type="button">Напишите Нам</button>
         </div>
       </div>
@@ -162,31 +163,39 @@
             
           </div>
           <div class="footer_box">
-            <img class="footer_address_icon" src="img/address.svg" alt="address">
+            <img class="footer_address_icon footer_address_icon_1" src="img/address.svg" alt="address">
             <fieldset class="footer_address">
               <legend>Наш Адресс</legend>
               <address >
-                <p>Свердловская область</p>
-                <p>г.Екатеринбург</p>
-                <p>ул. Луначарского д.194 офис 201</p>
+                <p class="footer_descr_item">Свердловская область</p>
+                <p class="footer_descr_item">г.Екатеринбург</p>
+                <p class="footer_descr_item">ул. Луначарского д.194 офис 201</p>
                 <a href="tel:83433611791" class="footer_tel">
                   <img src="img/phone.svg" alt="phone">
                   8 (343) 361-17-91
                 </a>
-                <p>Индекс: 620026</p>
+                <p class="footer_descr_item">Индекс: 620026</p>
               </address>
             </fieldset>
             
           </div>
           <div class="footer_box">
-            <img class="footer_address_icon" src="img/send.svg" alt="address">
-            <fieldset class="footer_form">
-              <legend>Писмо на Почту</legend>
-              <p>Мы с Вами свяжемся <br> в кратчайшие сроки</p>
+            <img class="footer_address_icon footer_address_icon_1" src="img/info.svg" alt="address">
+            <fieldset class="footer_info">
+              <legend>Информация</legend>
+              <ul>
+                <li>
+                  <p class="footer_info_descr">Цена может меняться в зависимости от объёма и требований клиента.</p>
+                </li>
+                <li>
+                  <p class="footer_descr_item">Осуществляем доставку грузовым транспортом.</p>
+                </li>
+              </ul>
               <form id="footer_form" action="#">
-                <input type="text" name="name" placeholder="Ваше Имя">
-                <input type="text" name="phone" placeholder="Ваш Номер">
-                <button type="submit" class="footer_btn">отправить письмо</button>
+                <button id="footer-btn" type="button" class="footer_btn">
+                  оставить заявку
+                  <img class="footer_btn_icon" src="img/send.svg" alt="address">
+                </button>
               </form>
             </fieldset>
           </div>
@@ -208,7 +217,8 @@
           </h3>
         </div>
   
-        <form id="popup-form" action="mail.php" class="contact100-form validate-form" type="POST">
+        <form id="popup-form" action="mail.php" class="contact100-form validate-form" method="POST">          
+          <p>Мы с Вами свяжемся в кратчайшие сроки</p>
           <div class="wrap-input100 validate-input">
             <input id="name" class="input100" type="text" name="name" placeholder="Ваше имя">
             <span class="focus-input100"></span>
@@ -216,8 +226,7 @@
               <img class="contact-icon" src="img/user.svg" alt="user">
             </label>
           </div>
-  
-  
+
           <div class="wrap-input100 validate-input">
             <input id="phone" class="input100" name="phone" placeholder="Ваш номер телефона">
             <span class="focus-input100"></span>
